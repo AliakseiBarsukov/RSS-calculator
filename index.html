@@ -8,82 +8,32 @@
 </head>
 
 <body>
-  <main class="main">
-      <div class="calc">
-        <div class="calc-display">
-          <input disabled type="text" id="display" value="0" name="" placeholder="000000000000000000" class="calc-display-input">
-        </div>
-        <div class="calc-buttons">
-          <table class="calc-table">
-            <tr class="calc-buttons-row">
-              <td>
-                <button type="button" class="clear-btn btn btn-hover-red" id="ce">ce</button>
-              </td>
-              <td>
-                <button type="button" class="clear-btn btn btn-hover-red" id="c">c</button>
-              </td>
-              <td>
-                <button type="button" class="operator btn btn-hover-orange">/</button>
-              </td>
-              <td>
-                <button type="button" class=" operator btn btn-hover-orange">*</button>
-              </td>
-            </tr>
-            <tr class="calc-buttons-row">
-              <td>
-                <button type="button" class="number btn-hover-green btn">7</button>
-              </td>
-              <td>
-                <button type="button" class="number btn-hover-green btn">8</button>
-              </td>
-              <td>
-                <button type="button" class="number btn-hover-green btn">9</button>
-              </td>
-              <td>
-                <button type="button" class="operator btn btn-hover-orange">-</button>
-              </td>
-            </tr>
-            <tr class="calc-buttons-row">
-              <td>
-                <button type="button" class="number btn-hover-green btn">4</button>
-              </td>
-              <td>
-                <button type="button" class="number btn-hover-green btn">5</button>
-              </td>
-              <td>
-                <button type="button" class="number btn-hover-green btn">6</button>
-              </td>
-              <td>
-                <button type="button" class="operator btn btn-hover-orange">+</button>
-              </td>
-            </tr>
-            <tr class="calc-buttons-row">
-              <td>
-                <button type="button" class="number btn-hover-green btn">1</button>
-              </td>
-              <td>
-                <button type="button" class="number btn-hover-green btn">2</button>
-              </td>
-              <td>
-                <button type="button" class="number btn-hover-green btn">3</button>
-              </td>
-              <td rowspan="2">
-                <button type="button" class="operator btn btn-equal btn-hover-orange" id="result">=</button>
-              </td>
-            </tr>
-            <tr class="calc-buttons-row">
-              <td colspan="2">
-                <button type="button" class="number btn-hover-green btn btn-long">0</button>
-              </td>
-              <td>
-                <button type="button" class="btn  btn-hover-orange" id="decimal">.</button>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-  </main>
-  <script src="script.js">
-  </script>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="big-btn">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>/</button>
+    <button data-numbers>1</button>
+    <button data-numbers>2</button>
+    <button data-numbers>3</button>
+    <button data-operation>*</button>
+    <button data-numbers>4</button>
+    <button data-numbers>5</button>
+    <button data-numbers>6</button>
+    <button data-operation>+</button>
+    <button data-numbers>7</button>
+    <button data-numbers>8</button>
+    <button data-numbers>9</button>
+    <button data-operation>-</button>
+    <button data-numbers>.</button>
+    <button data-numbers>0</button>
+    <button data-equals class="big-btn">=</button>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
